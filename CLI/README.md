@@ -18,7 +18,7 @@
 
 # CLI 예시
 
-![image-20220706171210329](C:\Users\kj310\AppData\Roaming\Typora\typora-user-images\image-20220706171210329.png)
+![image-20220706171210329](README.assets/image-20220706171210329.png)
 
 - 프롬프트 기본 인터페이스
   - 컴퓨터 정보
