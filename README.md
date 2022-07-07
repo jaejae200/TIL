@@ -15,7 +15,8 @@
 - [git](https://github.com/jaejae200/TIL/tree/master/git)
 - [github](https://github.com/jaejae200/TIL/tree/master/gitHub)
 
-
+- [git_flow](https://github.com/jaejae200/TIL/tree/master/git_flow)
+- [Branch](https://github.com/jaejae200/TIL/tree/master/Branch)
 
 # 📆 목표 
 
