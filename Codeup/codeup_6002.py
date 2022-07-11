@@ -1,0 +1,1 @@
+print('Hello World') # 띄어쓰기 출력
