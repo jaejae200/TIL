@@ -21,7 +21,16 @@
 # 📆 목표 
 
 - **끊임없이 성장하기**
+
 - **모르는 것을 부끄러워하지 않기**
+
 - **배운 내용이라도 깊게 익히기**
+
 - **항상 자신에게 겸손하기**
+
+  
+
+# 📙 Codeup 문제풀이
+
+- [Codeup Answer](https://github.com/jaejae200/TIL/tree/master/Codeup)
 
