@@ -1,6 +1,7 @@
 # 📖 Python
 
-**Life is short, [You](https://namu.wiki/w/프로그래머) need Python.**
+**𝑳𝒊𝒇𝒆 𝒊𝒔 𝒔𝒉𝒐𝒓𝒕, 𝒀𝒐𝒖 𝒏𝒆𝒆𝒅 𝑷𝒚𝒕𝒉𝒐𝒏. **
+
 **인생은 짧다. 당신에겐 파이썬이 필요하다**
 
 
@@ -8,4 +9,7 @@
 ##  ✏ Python TIL !
 
 - [파이썬 기초 문법](Python_기초.md)
+
+- [파이썬 알고리즘 기초](제어문_조건문.md)
+  - [기출 문제 풀이](기출문제_pratice.py)
 
