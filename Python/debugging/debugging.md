@@ -70,7 +70,7 @@
   
   - 파이썬 내장 예외(built-in-exceptions)
     
-    ![](C:\Users\kj310\AppData\Roaming\marktext\images\2022-07-18-16-29-20-image.png)
+    ![](C:\Users\kj310\Desktop\TIL\Python\debugging\debugging.assets\2022-07-18-16-29-20-image.png)
 
 ### 📌 예외 처리
 
@@ -88,7 +88,7 @@
 
 - ### 처리 순서
 
-![](C:\Users\kj310\AppData\Roaming\marktext\images\2022-07-18-16-31-05-image.png)
+![](C:\Users\kj310\Desktop\TIL\Python\debugging\debugging.assets\2022-07-18-16-31-05-image.png)
 
 - #### 작성 방법
   
