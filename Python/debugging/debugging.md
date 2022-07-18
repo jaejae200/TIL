@@ -54,7 +54,7 @@
   SyntaxError: invalid syntax
   ```
 
-### 📌예외(Exception)
+### 예외(Exception)
 
 - #### 실행 도중 예상치 못한 상황을 맞이하면, 프로그램 실행을 멈춤
   
