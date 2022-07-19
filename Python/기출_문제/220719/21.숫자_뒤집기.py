@@ -18,7 +18,7 @@ while a :
     # 나머지를 더해주고
     result += a % 10
     #number를 깎는다
-    result //= 10
+    a //= 10
 
 print(result)
 
