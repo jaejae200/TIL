@@ -14,6 +14,8 @@
 
 - [Python Debugging](debugging/debugging.md)
 
+- [Python OOP](OOP/OOP.md)
+
 ## 🔎 Python pratice !
 
 - [파이썬 기출 문제](기출_문제/)
