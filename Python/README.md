@@ -15,7 +15,7 @@
 - [Python Debugging](debugging/debugging.md)
 
 - [Python OOP](OOP/OOP.md)
-  - [Python Class](OOP/class.md)
+  - [Python Class](OOP/Class.md)
 
 
 ## 🔎 Python pratice !
