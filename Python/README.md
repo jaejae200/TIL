@@ -7,15 +7,12 @@
 ## ✏ Python TIL !
 
 - [파이썬 기초 문법](Python_기초/Python_기초.md)
-
 - [파이썬 알고리즘 기초](알고리즘_기초/알고리즘_기초.md)
-
 - [파이썬 함수 기초](함수_기초/함수.md)
-
 - [Python Debugging](debugging/debugging.md)
-
 - [Python OOP](OOP/OOP.md)
   - [Python Class](OOP/Class.md)
+- [Python Application](Python_응용_심화/Python_응용_심화.md)
 
 
 ## 🔎 Python pratice !
