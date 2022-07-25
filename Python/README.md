@@ -6,11 +6,11 @@
 
 ## ✏ Python TIL !
 
-- [파이썬 기초 문법](Python_기초/Python_기초.md)
+- [Python Basic](Python_기초/Python_기초.md)
 
-- [파이썬 알고리즘 기초](알고리즘_기초/알고리즘_기초.md)
+- [Python Algorithm](Python Algorithm/)
 
-- [파이썬 함수 기초](함수_기초/함수.md)
+- [Python function](함수_기초/함수.md)
 
 - [Python Debugging](debugging/debugging.md)
 
@@ -20,4 +20,5 @@
 
 ## 🔎 Python pratice !
 
+- [Daily broblem](daily/)
 - [파이썬 기출 문제](기출_문제/)
