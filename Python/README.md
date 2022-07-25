@@ -7,11 +7,8 @@
 ## ✏ Python TIL !
 
 - [Python Basic](Python_기초/Python_기초.md)
-
 - [Python Algorithm](Python Algorithm/)
-
 - [Python function](함수_기초/함수.md)
-
 - [Python Debugging](debugging/debugging.md)
 - [Python OOP](OOP/OOP.md)
   - [Python Class](OOP/Class.md)
