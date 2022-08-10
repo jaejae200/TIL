@@ -4,6 +4,8 @@
 
 - ####  [기본 알고리즘](Algorithm_base.md)
 
+- #### [제어문](Control_Statement.md)
+
 
 
 ## 🗃 자료 구조 
@@ -19,7 +21,7 @@
 
 ## ⏳ 시간 복잡도
 
-  - ### [Time complexity & BIG-O](Big-O.md)
+  - ### [Time complexity & BIG-O](big-O.md)
 
 
 
@@ -29,6 +31,6 @@
 
   - #### [Graph](graph.md)
 
-  - #### [Exhausitive Search](Exhausitive Search.md)
+  - #### [Exhausitive Search](Exhaustive_Search.md)
 
-  - #### [DFS](DFS.py)
+  - #### [DFS](DFS.md)
