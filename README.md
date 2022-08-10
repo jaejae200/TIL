@@ -10,15 +10,25 @@
 
 # 🌱 목차
 
-- [Markdown](https://github.com/jaejae200/TIL/tree/master/Markdown)
-- [CLI](https://github.com/jaejae200/TIL/tree/master/CLI)
-- [git](https://github.com/jaejae200/TIL/tree/master/git)
-- [github](https://github.com/jaejae200/TIL/tree/master/gitHub) ⭐
-- [git_flow](https://github.com/jaejae200/TIL/tree/master/git_flow)
-- [Branch](https://github.com/jaejae200/TIL/tree/master/Branch) ⭐
-- [Python ](https://github.com/jaejae200/TIL/tree/master/Python)⭐
+- ##### [Markdown](https://github.com/jaejae200/TIL/tree/master/Markdown)
 
-# 📆 목표 
+- ##### [CLI](https://github.com/jaejae200/TIL/tree/master/CLI)
+
+- #### GIT & Control
+
+  - ##### [git](https://github.com/jaejae200/TIL/tree/master/git)
+
+    - ##### [git_flow](https://github.com/jaejae200/TIL/tree/master/git_flow)
+
+  - ##### [github](https://github.com/jaejae200/TIL/tree/master/gitHub) ⭐
+
+  - ##### [Branch](https://github.com/jaejae200/TIL/tree/master/Branch) ⭐
+
+- #### [Python](https://github.com/jaejae200/TIL/tree/master/Python) ⭐
+
+  
+
+# 🎯 목표 
 
 - **끊임없이 성장하기**
 
@@ -30,7 +40,14 @@
 
   
 
-# 📙 Codeup 문제풀이
+# 📆 Daily Problem
 
-- [Codeup Answer](https://github.com/jaejae200/TIL/tree/master/Codeup)
+- ##### [Code Up 기초 문제](Codeup/)
 
+- ### [Algorithm](daily)
+
+  - 내 저장소에 쌓이는 Stack
+
+​	
+
+​		 

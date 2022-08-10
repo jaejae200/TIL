@@ -6,16 +6,17 @@
 
 ## ✏ Python TIL !
 
-- [Python Basic](Python_기초/Python_기초.md)
-- [Python function](함수_기초/함수.md)
-- [Python Debugging](debugging/debugging.md)
-- [Python OOP](OOP/OOP.md)
-  - [Python Class](OOP/Class.md)
-- [Python Application](Python_응용_심화/Python_응용_심화.md)
-- [Python Algorithm](https://github.com/jaejae200/TIL/tree/master/Python/Python%20Algorithm)
+- #### [Python Basic](Python_기초/Python_기초.md)
 
+  - ##### [Python function](함수_기초/함수.md)
 
-## 🔎 Python pratice !
+  - ##### [Python Debugging](debugging/debugging.md)
 
-- [Daily broblem](daily/)
-- [파이썬 기출 문제](기출_문제/)
+  - ##### [Python OOP](OOP/OOP.md)
+
+  - ##### [Python Class](OOP/Class.md)
+
+  - ##### [Python Application](Python_응용_심화/Python_응용_심화.md)
+
+- #### [Python Algorithm](https://github.com/jaejae200/TIL/tree/master/Python/Python%20Algorithm)
+
