@@ -153,6 +153,8 @@ sqlite> .tables
 examples
 ```
 
+
+
 ## 📝 필드 제약 조건
 
 - ### `NOT NULL` : `NULL` 값 입력 금지
@@ -168,9 +170,9 @@ examples
 
 ### ✔ CREATE
 
-- INSERT ⭐
+- ##### INSERT ⭐
 
-  - 'insert a single row into a table'
+  - ##### *'insert a single row into a table'*
 
   - 테이블에 단일 행 삽입
 
@@ -190,31 +192,199 @@ examples
 
 - #### SELECT 
 
-  - #####  "query data from a table"
+  - #####  *"query data from a table"*
   - #### 🔎 테이블에서 데이터를 조회
   - #### SELECT 문은 SQLite에서 가장 기본이 되는 문, 다양한 절와 함께 사용한다
     
     - #### ```ORDER BY, DISTINCT, WHERE, LIMIT, GROUP BY ...```
 
+  
+
 - #### LIMIT 
 
-  - ##### "constranin the number of rows returned by a query"
+  - ##### *"constranin the number of rows returned by a query"*
   - #### 🔎 쿼리에서 반환되는 행 수를 제한
   - #### 특정 행부터 시작해서 조회하기 위해 OFFSET 키워드와 함께 사용하기도 한다.
 
+  
+
 - #### WHERE 
 
-  - ##### "specify the search condition for rows returned by the query"
+  - ##### *"specify the search condition for rows returned by the query"*
+
   - #### 쿼리에서 반환된 행에 대한 특정 검색 조건을 지정
+
+  - #### 여러 비교 연산자들이 존재 (후에 서술)
+
+  
 
 - #### SELECT DISTINCT 
 
-  - ##### "remove duplicate rows in the result set"
+  - ##### *"remove duplicate rows in the result set"*
   - #### 🔎 조회 결과에서 중복 행을 제거
   - #### DISTINCT 절은 SELECT 키워드 바로 뒤에 작성해야 함
+
+  
 
 - #### OFFSET 
 
   - ##### 처음부터 주어진 요소나 지점까지의 차이를 나타낸다
   - ##### 문자열 'abcdef' 에서 문자 'c' 는 시작점 'a' 에서 2의 OFFSET
+
+
+
+####  WHERE절에서 사용할 수 있는 연산자
+
+- #### 비교 연산자
+
+  - ##### `=, > , >=, <, <=` 는 숫자 혹은 문자 값의 대/소 동일 여부를 확인하는 연산자
+
+  
+
+- #### 논리 연산자
+
+  - ##### `AND`
+
+    - 앞에 오는 조건과 뒤에 오는 조건이 모두 참인 경우
+
+  - ##### `OR`
+
+    - 앞의 조건이나 뒤의 조건이 모두 참인 경우
+
+  - ##### `NOT`
+
+    - 뒤에 오는 조건과 반대로
+
+  - ##### `BETWEEN (값1 AND 값2)`
+
+    - 값1과 값2 사이의 비교 (값1 <= 비교값 <= 값2)
+
+  - ##### `IN (값1, 값2, ...)`
+
+    - 목록 중에 값이 하나라도 일치하면 성공
+
+  - ##### `LIKE`
+
+    - 비교 문자열과 형태 일치
+    - 와일드카드 (% : 0개 이상 문자, _ : 1개 단일 문자)
+
+  - ##### `IS NULL / IS NOT NULL`
+
+    - NULL 여부를 확인할 떄는 항상 = **대신에 IS를 활용**
+
+  
+
+- #### 부정 연산자
+
+  - 같지 않다 ` (!=, ^=, <>)`
+  - ~와 같지 않다 ` (NOT 칼럼명 =)`
+
+  
+
+- #### 연산자 우선순위
+
+  - 1순위 : 괄호 ()
+  
+  - 2순위 : NOT
+  
+  - 3순위 : 비교 연산자, SQL
+  
+  - 4순위 : AND
+  
+  - 5순위 : OR 
+  
+    
+
+## 🔨 SQLite Aggregate Functions
+
+- ### 집계 함수
+
+  - **값 집합에 대한 계산을 수행하고 단일 값을 반환**
+    
+    - 여러 행으로부터 하나의 결과값을 반환하는 함수
+  - ##### `SELECT` 구문에서만 사용된다.
+  - ##### 예시
+    
+    - 테이블 전체 행 수를 구하는 `COUNT(*)`
+    - age 컬럼 전체 평균 값을 구하는 `AVG(age)`
+
+- ### Functions
+
+  - #### `COUNT`
+
+    - **그룹의 항목 수**를 가져온다.
+
+  - #### `AVG`
+
+    - 모든 값의 **평균**을 계산
+
+  - #### `MAX`
+
+    - 그룹에 있는 모든 값의 **최댓값**을 가져온다.
+
+  - #### `MIN`
+
+    - 그룹에 있는 모든 값으 **최솟값**을 가져온다.
+
+  - #### `SUM`
+
+    - **모든 값의 합**을 계산한다.
+
+## 🔎 LIKE
+
+- *'query data based on pattern matching'*
+
+- **패턴 일치**를 기반으로 **데이터를 조회**하는 방법
+
+- SQLite는 패턴 구성을 위한 2개의 **`wildcards`** 제공
+
+  - #### `%` (percent sign)
+
+    - 0개 이상의 문자
+
+  - #### `_ ` (underscore)
+
+    - 임의의 단일 문자
+
+- wildcards 사용 예시
+
+```sqlite
+SELECT * FROM 테이블 WHERE 컬럼 LIKE '패턴';
+```
+
+| 와일드 카드 패턴 | 의미                                          |
+| ---------------- | --------------------------------------------- |
+| `2%`             | 2로 시작하는 값                               |
+| `%2`             | 2로 끝나는 값                                 |
+| `%2%`            | 2가 들어가는 값                               |
+| `_2%`            | 아무 값이 하나 있고 두 번째가 2로 시작하는 값 |
+| `1___`           | 1로 시작하고 총 4자리인 값                    |
+| `2_%_% / 2__% `  | 2로 시작하고 적어도 3자리인 값                |
+
+
+
+## 🔎 ORDER BY
+
+- *'sort a result set of a query'*
+
+- 조회 결과 집합을 정렬
+
+- ##### SELECT 문에 추가하여 사용
+
+- 정렬 순서를 위한 **2개의 keyword 제공**
+
+  - ##### `ASC` - 오름차순 (default)
+
+  - ##### `DESC` - 내림차순
+
+```sqlite
+-- users 나이 순으로 오름차순 정렬하여 상위 10개의 이름만 조회
+SELECT first_name FROM users ORDER BY age ASC LIMIT 10;
+
+-- 나이, 성 순으로 오름차순 정렬
+SELECT * users ORDER BY age, last_name LIMIT 10;
+
+-- 계좌 잔액 순으로 내림차순 정렬 성과 이름 10개 조회
+SELECT last_name, first_name ORDER BY balance DESC, last_name ASC LIMIT 10; 
+```
 
