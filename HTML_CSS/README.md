@@ -16,7 +16,7 @@
   
   - #### [CSS Box model](CSS_Box_Model.md)
   
-  - #### [CSS Position](CSS_Position)
+  - #### [CSS Position](CSS_Position.md)
   
 - ### [MDN](MDN_학습자료.md)
 
