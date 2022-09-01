@@ -6,6 +6,8 @@
 
   - #### [HTML Base](HTML_Base.md)
 
+  - #### [Semantic Value](semantic_value.md)
+
 - ### CSS
 
   - #### [CSS Base](CSS_Base.md)
