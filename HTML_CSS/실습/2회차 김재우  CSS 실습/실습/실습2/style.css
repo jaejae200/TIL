@@ -1,0 +1,39 @@
+/* 아래에 CSS를 작성해주세요. */
+
+.card {
+    width: 300px;
+    height: 300px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 3%;
+}
+
+.subtitle {
+    display: block;
+    font-size: 11px;
+    margin-top: 3px;
+    opacity: 50%;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 13px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    margin-left: 10px;
+}
+
+.sale {
+    color: skyblue;
+    font-weight: bold;
+}
+
+div {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+
+

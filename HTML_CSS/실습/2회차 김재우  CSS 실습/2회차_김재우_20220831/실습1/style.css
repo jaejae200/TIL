@@ -1,0 +1,115 @@
+/* 아래에 CSS를 작성해주세요. */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+}
+h3 {
+    font-size: 14px;
+}
+
+p {
+    font-size: 10px;
+    margin-left: 5px;
+}
+.section {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.subtitle {
+    display: block;
+    font-size: 12px;
+}
+.container {
+    display: flex;
+    height: 900px;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+.item {
+    width: 300px;
+    margin-bottom: 30px;
+    box-shadow: 4px 4px 4px 2px #eef2fe;
+    border-radius: 1rem;
+    
+}
+.item img{
+    width: 100%;
+    border-radius: 1rem;
+}
+.text {
+    width: 300px;
+    margin-left: 10px;
+}
+
+.nav {
+    border: 3px solid black;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    background-color: #eef2fe;
+}
+
+.top-btn {
+    position: fixed;
+    border: 3px solid black;
+    border-radius: 10rem;
+    height: 3rem;
+    width: 3rem;
+    right: 1rem;
+    bottom: 1rem;
+    background-color: #eef2fe;
+}
+
+
+/* .subtitle {
+    display: block;
+    font-size: 12px;
+}
+  
+.section {
+    text-align: center;
+}
+.card {
+    width: 900px;
+    height: 900px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.text {
+    width: 300px;
+}
+
+.item {
+    width: 300px;
+    height: 900px;
+    float:left;
+    margin-right: 20px;
+}
+
+p {
+    font-size : 10px;
+    text-align: left;
+}
+
+h3 {
+    font-size : 15px;
+}
+
+.subtitle_2 {
+    font-size : 10px;
+    display: block;
+    text-align: left;
+    margin-left : 10px;
+} */
+
