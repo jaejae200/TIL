@@ -32,5 +32,7 @@
 
   - #### [Bootstrap components](bootstrap_components.md)
 
+  - #### [Bootstrap Grid](bootstrap_grid.md)
+
 - ### [MDN](MDN_학습자료.md)
 
