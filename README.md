@@ -20,16 +20,20 @@
 
     - ##### [git_flow](https://github.com/jaejae200/TIL/tree/master/git_flow)
 
-  - ##### [github](https://github.com/jaejae200/TIL/tree/master/gitHub) ⭐
+  - ##### [github](https://github.com/jaejae200/TIL/tree/master/gitHub) 
 
-  - ##### [Branch](https://github.com/jaejae200/TIL/tree/master/Branch) ⭐
+  - ##### [Branch](https://github.com/jaejae200/TIL/tree/master/Branch) 
 
-- ### [Python](https://github.com/jaejae200/TIL/tree/master/Python) ⭐
+- ### [Python](https://github.com/jaejae200/TIL/tree/master/Python) 
 
-- ### [SQL ](SQL/)⭐
+- ### [JavaScript](./JavaScript)
 
-- ### [HTML / CSS](https://github.com/jaejae200/TIL/tree/master/HTML_CSS) ⭐
+- ### [SQL ](SQL/)
 
+- ### [HTML / CSS](https://github.com/jaejae200/TIL/tree/master/HTML_CSS) 
+
+  
+  
   
 
 # 🎯 목표 
@@ -43,6 +47,17 @@
 - **항상 자신에게 겸손하기**
 
   
+
+# 👨‍💻 Pair Programming !!
+
+### *22.09.13 ~ 22.09.14*
+
+- ### [Web](https://github.com/techtaek54/PJT-0913)
+
+  - **bootstrap 활용**
+  - [**github.io Homepage 제작**](https://techtaek54.github.io/PJT-0913/)
+
+
 
 # 📆 Daily Problem
 
