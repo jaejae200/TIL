@@ -14,19 +14,23 @@ document.write("Hello, world!");
 
       - [Arrays ](JavaScript_Arrays) ⭐
       - [Function](JavaScript_function.md) ⭐
-
-
-    
-
-  - #### ✔ [Identifier](JavaScript_identifier.md) 
-
-  - #### ✔ [operator](JavaScript_operator.md)
-
-    
-
-  - #### [Control](JavaScript_Control.md)
-
   
+    - #### ✔ [Identifier](JavaScript_identifier.md) 
+  
+  
+    - #### ✔ [operator](JavaScript_operator.md)
+  
+  
+    - #### [Control](JavaScript_Control.md)
+  
+      
+  
+      ### <!-- WEB -->
+  
+    - #### [Event](JavaScript_Event.md)
+  
+
+
 
 - ### [DOM](DOM.md)
 
