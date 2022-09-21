@@ -6,7 +6,7 @@ document.write("Hello, world!");
 
 - ### [JavaScript](./JavaScript.md) 
 
-  - #### [Data Type](./JavaScript_Data_type)
+  - #### [Data Type](./JavaScript_Data_type.md)
 
     - ##### [String](./JavaScript_String.md)
 
