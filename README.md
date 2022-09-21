@@ -26,14 +26,16 @@
 
 - ### [Python](https://github.com/jaejae200/TIL/tree/master/Python) 
 
+  - #### [Django](./Django)
+
+- ### [HTML / CSS](https://github.com/jaejae200/TIL/tree/master/HTML_CSS)
+
 - ### [JavaScript](./JavaScript)
 
 - ### [SQL ](SQL/)
 
-- ### [HTML / CSS](https://github.com/jaejae200/TIL/tree/master/HTML_CSS) 
+  
 
-  
-  
   
 
 # 🎯 목표 
