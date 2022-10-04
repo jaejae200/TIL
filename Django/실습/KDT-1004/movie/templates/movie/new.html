@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form action="{% url 'movie:create' %}" method="POST">
+  <!-- POST 요청에서만 csrf_token 발급하고 체크한다. (보안과 유효성 검증) -->
+  {% csrf_token %}
+  <!-- 모델 field 정보를 form에 적용해준다. forms.py 설정 기반 -->
+  {{ article_form.as_p }}
+  <!-- <label for="title">제목 : </label>
+  <input type="text" name="title" id="title">
+  <label for="content">내용 : </label>
+  <textarea name="content" id="content" cols="30" rows="10"></textarea> -->
+  <input type="submit" value="작성">
+</form>
+{% endblock %}
