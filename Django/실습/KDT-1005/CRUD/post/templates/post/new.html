@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+
+{% block content %}
+<div class="container">
+  <h1 class="py-5 text-center">게시글 작성</h1>
+  <form action="" method="POST">
+    {% csrf_token %}
+    {% bootstrap_form post_form %}
+    {# post_form.as_p #}
+    <div class="float-end">
+      <a href="{% url 'post:index'%}" class="btn btn-primary">이전</a>
+      {% bootstrap_button button_type="submit" content="작성" %}
+    </div>
+  </form>
+</div>
+{% endblock %}

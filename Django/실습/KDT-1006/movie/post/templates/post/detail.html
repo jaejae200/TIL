@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block body %}
+  <div class="container">
+    <div class="card mt-5">
+      <div class="card-body position-relative">
+        <h2 class="mb-3">{{ post.title }}</h2>
+        <p>{{ post.summary }}</p>
+        <p class="position-absolute top-0 end-0 fw-bold p-3">{{ post.running_time }}분</p>
+      </div>
+    </div>
+    <div class="my-3 text-end">
+      <a href="{% url 'post:update' post.pk %}" class="btn btn-primary">수정하기</a>
+      <a href="{% url 'post:delete' post.pk %}" class="btn btn-danger">삭제하기</a>
+    </div>
+  </div>
+{% endblock %}

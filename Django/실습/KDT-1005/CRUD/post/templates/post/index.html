@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+    <h1 class="py-5 text-center">게시판</h1>
+    <div class="text-center">
+        <img src="{% static 'post/image1.jpg' %}">
+    </div>
+    {% for post in posts %}
+    <div class="card py-3 my-3">
+        <div class=" card-body">
+            <h3 class="card-title py-2"><a href="{% url 'post:detail' post.pk %}">{{ post.title }}</a></h3>
+            <p class="card-text m-0">작성 날짜 : {{ post.created_at|date:'Y년 m월 d일' }}</p>
+            <p class="card-text">수정한 날짜 : {{ post.updated_at|date:'Y년 m월 d일' }}</p>
+        </div>
+    </div>
+    {% endfor %}
+    <br>
+    <a href="{% url 'post:create' %}" class="btn btn-primary float-end">글 작성</a>
+</div>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+
+{% block body %}
+  <div class="container">
+    <h1 class="text-center py-3 mt-5 fw-bold">글 작성하기</h1>
+    <form method="POST">
+      {% csrf_token %}
+      {% bootstrap_form post_form %}
+      <div class="text-end">
+        <button type="submit" class="btn btn-primary">작성하기</button>
+      </div>
+    </form>
+  </div>
+{% endblock body %}

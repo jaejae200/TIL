@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h1 class="text-center py-5">글 내용</h1>
+    <div class="border border-dark p-2 mb-2 border-opacity-50 position-relative" style="height: 30rem;">
+        <div class="py-3">
+            <p>{{ post.content }} </p>
+        </div>
+        <div class="position-absolute top-0 end-0 mx-2">
+            <p>작성 : {{ post.created_at|date:'Y년 m월 d일' }} 수정 : {{ post.updated_at|date:'Y년 m월 d일' }}</p>
+        </div>
+    </div>
+    <div class="my-3">
+        <a href="{% url 'post:delete' post.pk %}" class="btn btn-danger m-0 ">글 삭제</a>
+    </div>
+    <div class="float-end">
+        <a href="{% url 'post:update' post.pk %}" class="btn btn-primary btn-lg">수정하기</a>
+        <a href="{% url 'post:index' %}" class="btn btn-primary btn-lg">홈으로</a>
+    </div>
+</div>
+
+{% endblock %}
