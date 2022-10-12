@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block body %}
+  <div class="container">
+    {% if request.user.is_authenticated %}
+      <div class="py-5 text-center">
+        <h1>회원 목록</h1>
+      </div>
+      <table class="table table-striped border-dark border-opacity-25">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">NAME</th>
+            <th scope="col">E-mail</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for user in users %}
+            <tr>
+              <th scope="row">{{ user.pk }}</td>
+              <td>
+                <a href="{% url 'login:detail' user.pk %}">{{ user.username }}</a>
+              </td>
+              <td>{{ user.email }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  {% endif %}
+  {% comment %} <div class='container text-end'>
+    <a href="{% url 'login:signup' %}" class="btn btn-primary">회원 가입</a>
+    <a href="{% url 'login:login' %}" class="btn btn-primary">로그인</a>
+  </div> {% endcomment %}
+{% endblock %}
