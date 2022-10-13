@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5%}
+
+{% block body %}
+  <div class="py-5 text-center">
+    <h1>로그인</h1>
+  </div>
+  <form action="" method="POST">
+    {% csrf_token %}
+    {% bootstrap_form form %}
+    <div class="text-end py-3">
+      <a href="{% url 'accounts:index' %}" class="btn btn-primary">메인 페이지</a>
+      <button type="submit" class="btn btn-primary">로그인</button>
+    </div>
+  </form>
+{% endblock %}
