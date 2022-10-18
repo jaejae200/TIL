@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+
+{% block body %}
+  <div>
+    <h1 class="py-5 my-5 text-center">자유 게시판</h1>
+  </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">제목</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for article in articles %}
+        <tr>
+          <th>
+            <a href="{% url 'articles:detail' article.pk %}">{{ article.title }}</a>
+          </th>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <div class="text-end">
+    <a href="{% url 'articles:create' %}" class="btn btn-primary">글 작성</a>
+  </div>
+{% endblock %}

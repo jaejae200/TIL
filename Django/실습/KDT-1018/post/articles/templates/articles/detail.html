@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+
+{% block body %}
+  <div class="position-relative">
+    <h1 class="py-5 my-5 text-center">글 내용</h1>
+    <div class="position-absolute top-0 end-0">
+      <a href="{% url 'articles:index' %}" class="btn btn-outline-secondary">메인 화면</a>
+    </div>
+  </div>
+  <div class='card' style="height: 200px;">
+    <div class="card-body">
+      {{ article.content }}
+    </div>
+  </div>
+  <div class="text-end">
+    <a href="{% url 'articles:update' article.pk %}" class="btn btn-primary my-3">수정하기</a>
+    <a href="{% url 'articles:delete' article.pk %}" class="btn btn-danger my-3">삭제하기</a>
+  </div>
+  <div>
+    <h4 class="my-3">Comments</h4>
+    <p class="text-end">
+      {{ comments|length }}개의 댓글이 있습니다.
+    </p>
+  </div>
+  {% for comment in comments %}
+    <div>
+      <p>{{ comment.content }}</p>
+      <div class="text-end">
+        <a href="{% url 'articles:comments_delete' article.pk comment.pk %}" class="btn btn-danger btn-sm">삭제</a>
+      </div>
+      <hr>
+    </div>
+    {% empty %}
+    <p class="my-5">댓글이 없습니다.</p>
+  {% endfor %}
+  <form action="{% url 'articles:comment_create' article.pk %}" method="POST">
+    {% csrf_token %}
+    {% bootstrap_form comment_form layout='inline'%}
+    <button type="submit" class="btn btn-primary py-2 my-2">작성</button>
+  </form>
+{% endblock %}

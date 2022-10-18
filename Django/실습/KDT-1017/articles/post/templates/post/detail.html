@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block body %}
+  <p>{{ article.content }}
+  </p>
+  {% if article.image %}
+    <img src="{{ article.image.url }}" alt="{{ article.image }}" width="400" height="300">
+  {% endif %}
+  <div class="text-end">
+    <a href="{% url 'post:update' article.pk %}" class="btn btn-primary">수정하기</a>
+  </div>
+{% endblock %}

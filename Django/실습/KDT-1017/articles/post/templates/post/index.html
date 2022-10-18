@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+
+{% block body %}
+  <h1>동물 사진 보기</h1>
+  <a class="btn btn-primary my-3 float-right" href="{% url 'post:create' %}">글 쓰기</a>
+
+  <div class="row">
+    {% for article in articles %}
+      <div class="col-4">
+        <div class="card">
+          <img src="{{ article.thumbnail.url }}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{ article.title }}</h5>
+            <a href="{% url 'post:detail' article.pk %}" class="btn btn-outline-primary my-3">상세보기</a>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}

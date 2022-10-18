@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+
+{% block body %}
+
+  <h1>
+    글쓰기
+  </h1>
+
+  <form action="" method="POST">
+    {% csrf_token %}
+    {% bootstrap_form article_form %}
+    <button type="submit" class="btn btn-primary">작성</button>
+  </form>
+{% endblock %}
