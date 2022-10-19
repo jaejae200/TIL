@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+
+{% block body %}
+  <h1>{{ article.title }}</h1>
+  <h3>
+    <a href="{% url 'accounts:detail' article.user.pk %}">{{ article.user.username }}</a>
+  </h3>
+  <p>{{ article.content }}
+  </p>
+
+  {% if request.user == article.user %}
+    <p>
+      <a href="{% url 'articles:update' article.pk %}">수정하기</a>
+    </p>
+  {% endif %}
+{% endblock %}
