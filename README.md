@@ -10,27 +10,27 @@
 
 # 🌱 목차
 
-- ##### [Markdown](https://github.com/jaejae200/TIL/tree/master/Markdown)
+- ##### [Markdown](Markdown/)
 
-- ##### [CLI](https://github.com/jaejae200/TIL/tree/master/CLI)
+- ##### [CLI](CLI/)
 
 - #### GIT & Control
 
-  - ##### [git](https://github.com/jaejae200/TIL/tree/master/git)
+  - ##### [git](git/)
 
-    - ##### [git_flow](https://github.com/jaejae200/TIL/tree/master/git_flow)
+    - ##### [git_flow](git_flow/)
 
-  - ##### [github](https://github.com/jaejae200/TIL/tree/master/gitHub) 
+  - ##### [github](gitHub/) 
 
-  - ##### [Branch](https://github.com/jaejae200/TIL/tree/master/Branch) 
+  - ##### [Branch](Branch/) 
 
-- ### [Python](https://github.com/jaejae200/TIL/tree/master/Python) 
+- ### [Python](python/) 
 
-  - #### [Django](./Django)
+  - #### [Django](Django/)
 
-- ### [HTML / CSS](https://github.com/jaejae200/TIL/tree/master/HTML_CSS)
+- ### [HTML / CSS](HTML_CSS/)
 
-- ### [JavaScript](./JavaScript)
+- ### [JavaScript](JavaScript/)
 
 - ### [SQL ](SQL/)
 
@@ -41,33 +41,9 @@
 # 🎯 목표 
 
 - **끊임없이 성장하기**
-
 - **모르는 것을 부끄러워하지 않기**
-
 - **배운 내용이라도 깊게 익히기**
-
 - **항상 자신에게 겸손하기**
-
-  
-
-# 👨‍💻 Pair Programming !!
-
-### *22.09.13 ~ 22.09.14*
-
-- ### [Web](https://github.com/techtaek54/PJT-0913)
-
-  - **bootstrap 활용**
-  - [**github.io Homepage 제작**](https://techtaek54.github.io/PJT-0913/)
-
-
-
-# 📆 Daily Problem
-
-- ##### [Code Up 기초 문제](Codeup/)
-
-- ### [Algorithm](daily)
-
-  - 내 저장소에 쌓이는 Stack
 
 ​	
 

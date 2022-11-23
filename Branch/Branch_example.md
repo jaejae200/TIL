@@ -1,6 +1,6 @@
-## Branch 병합 시나리오
+## Branch 병합 시나리오 📄
 
-### 상황 1. fast-foward
+### 상황 1. fast-foward 
 
 ​		**fast-foward**는 `feature` 브랜치 생성된 이후 `master` 브랜치에 변경 사항이 없는 상황에서 이루어진다.
 
