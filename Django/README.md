@@ -2,11 +2,11 @@
 
 ## Web Framework
 
-- ### [django](django.md)
+- ### [django](Django.md)
 
   - #### [Variable routing](django_Variable_routing.md)
 
-  - #### [템플릿 활용](django_Template.md)
+  - #### [템플릿 활용](Django_Template.md)
 
     - [템플릿 계승 (extends)](Template_inheritance.md)
     - [템플릿 urls 지정](Template_namespace.md)
